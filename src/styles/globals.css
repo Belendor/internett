@@ -27,14 +27,6 @@ body {
 }
 
 /* styles.css */
-.separator {
-  border: none;
-  height: 2px;
-  background-color: #333;
-  margin: 20px 0;
-}
-
-/* styles.css */
 .nav-menu {
   list-style-type: none;
   padding: 0;
@@ -72,4 +64,23 @@ html, body {
 /* Make the main content area expand to fill the available space */
 main {
   flex-grow: 1;
+}
+
+.page-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* styles.css or your custom stylesheet */
+.footer-container {
+  padding-left: 20px; /* Adjust the left padding as needed */
+  padding-right: 20px; /* Adjust the right padding as needed */
+}
+.header-container {
+  padding-left: 20px; /* Adjust the left padding as needed */
+  padding-right: 20px; /* Adjust the right padding as needed */
+}
+
+button {
+  margin-bottom: 20px; /* Adds 5px of padding to all buttons */
 }
