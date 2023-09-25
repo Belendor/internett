@@ -11,13 +11,13 @@ function ProductsPage() {
   });
 
   // Handle form input changes
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setNewProduct({ ...newProduct, [name]: value });
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     // Add your logic to create a new product with the data in the "newProduct" state.
     // You can send an API request, update a database, or manage product data as needed.
