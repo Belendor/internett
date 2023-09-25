@@ -1,6 +1,6 @@
 import React from "react";
 
-function IndexPage() {
+function ContactPage() {
   return (
     <div>
       <header className="bg-indigo-600 text-white py-4">
@@ -29,10 +29,10 @@ function IndexPage() {
       </header>
       <hr className="separator" />
       <main>
-        {/* Your custom content for the index page */}
-        <section className="index-content">
-          <h1>Welcome to the Flower Seed Shop!</h1>
-          <p>Discover a world of beautiful flower seeds.</p>
+        <section className="contact-form">
+          <h1>Contact Us</h1>
+          <p>Have a question or feedback? Reach out to us!</p>
+          {/* Add your contact form here */}
         </section>
       </main>
       <hr className="separator" />
@@ -74,4 +74,4 @@ function IndexPage() {
   );
 }
 
-export default IndexPage;
+export default ContactPage;
