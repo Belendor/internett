@@ -1,10 +1,9 @@
-// Header.js
 import React from "react";
 
 function Header() {
   return (
     <header className="bg-indigo-600 text-white py-4">
-      <div className="flex justify-between items-center container mx-auto header-container"> {/* Add a container div and a class */}
+      <div className="container mx-auto flex justify-between items-center px-4 py-2 rounded-lg header-container"> {/* Add rounded-lg class for rounded paddings */}
         <div className="logo">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flower_poster_2.jpg/495px-Flower_poster_2.jpg?w=50&h=50"
@@ -22,6 +21,9 @@ function Header() {
             </li>
             <li>
               <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/apipage">Check out API</a>
             </li>
           </ul>
         </nav>

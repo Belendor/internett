@@ -4,9 +4,10 @@ import Footer from "./components/Footer";
 
 function ContactPage() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="page-container">
+      <main className="flex-grow mx-auto max-w-screen-lg page-container">
+        {/* Use "mx-auto" for centering and "max-w-screen-lg" for the maximum width */}
         <section className="contact-form">
           <h1>Contact Us</h1>
           <p>Have a question or feedback? Reach out to us!</p>
