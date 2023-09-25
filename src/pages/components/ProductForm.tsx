@@ -1,4 +1,3 @@
-// ProductForm.js
 import React, { ChangeEvent, FormEvent } from "react";
 
 interface ProductFormProps {
@@ -34,7 +33,7 @@ function ProductForm({
             type="text"
             id="name"
             name="name"
-            value={newProduct.name}
+            value={newProduct?.name || ""}
             onChange={handleInputChange}
             className="mt-1 p-2 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
             required
@@ -51,7 +50,7 @@ function ProductForm({
             type="number"
             id="price"
             name="price"
-            value={newProduct.price}
+            value={newProduct?.price || ""}
             onChange={handleInputChange}
             step="0.01"
             className="mt-1 p-2 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
@@ -68,7 +67,7 @@ function ProductForm({
           <textarea
             id="description"
             name="description"
-            value={newProduct.description}
+            value={newProduct?.description || ""}
             onChange={handleInputChange}
             className="mt-1 p-2 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
             required
@@ -85,7 +84,7 @@ function ProductForm({
             type="number"
             id="quantity"
             name="quantity"
-            value={newProduct.quantity}
+            value={newProduct?.quantity || ""}
             onChange={handleInputChange}
             className="mt-1 p-2 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
             required
@@ -101,7 +100,7 @@ function ProductForm({
           <select
             id="category"
             name="category"
-            value={newProduct.category}
+            value={newProduct?.category || ""}
             onChange={handleInputChange}
             className="mt-1 p-2 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300 rounded-md"
             required
